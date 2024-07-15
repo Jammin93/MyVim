@@ -3,9 +3,13 @@
 # Except these files
 !.gitignore
 !.vimrc
-!.vim
-!.vim/**
+!autoload
+!autoload/**
+!colors
+!colors/**
+!ftplugin
+!ftplugin/**
 !.setup.sh
 !.README.md
 # Ignore installed plugins
-.vim/plugged/**
+plugged/**
