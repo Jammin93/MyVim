@@ -9,7 +9,7 @@
 !colors/**
 !ftplugin
 !ftplugin/**
-!.setup.sh
-!.README.md
+!setup.sh
+!README.md
 # Ignore installed plugins
 plugged/**
