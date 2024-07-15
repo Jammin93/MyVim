@@ -6,5 +6,6 @@
 !.vim
 !.vim/**
 !.setup.sh
+!.README.md
 # Ignore installed plugins
 .vim/plugged/**
