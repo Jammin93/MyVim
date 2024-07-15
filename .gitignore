@@ -1,0 +1,10 @@
+# Ignore everything
+*
+# Except these files
+!.gitignore
+!.vimrc
+!.vim
+!.vim/**
+!.setup.sh
+# Ignore installed plugins
+.vim/plugged/**
