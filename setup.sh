@@ -11,22 +11,8 @@ SRC_DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 # Install vim if it is not already installed.
 sudo apt install vim
 
-#########################################################
-# Install dependencies for conquer of completion (coc). #
-#########################################################
-# Install Node.js.
-# If the link changes, go here: https://nodejs.org/en/download/package-manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install 20
-
-sudo apt install npm
-npm install --global yarn
-
-# Install all of the plugins while we're at it.
-vim +PlugInstall +qall
-
-# Install coc. This will open vim and must be the last piece of code that runs.
-vim -u "$SRC_DIR"/.vimrc -c "call coc#util#install()"
+# Install all of the plugins.
+vim -u "$SRC_DIR"/.vimrc +PlugInstall +qall
 
 clear
 

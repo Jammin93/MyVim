@@ -9,7 +9,6 @@ Plug 'preservim/nerdtree'
 Plug 'farmergreg/vim-lastplace'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'neoclide/coc.nvim', {'on': []}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
