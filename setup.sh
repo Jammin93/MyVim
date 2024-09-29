@@ -9,7 +9,10 @@ done
 SRC_DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 
 # Install vim if it is not already installed.
-sudo apt install vim
+sudo apt install vim curl -y
+
+# Install Vim Plug.
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install all of the plugins.
 vim -u "$SRC_DIR"/.vimrc +PlugInstall +qall
